@@ -37,3 +37,12 @@ Authentication: Passport.js for user authentication.
 Real-time Updates: WebSocket or a similar technology for real-time notifications.
 API Integration: For currency conversion and other external services.
 Version Control: Git for collaborative development and GitHub for project hosting.
+
+
+Getting Started
+To get started with the JavaScript Bank App, follow these steps:
+
+Clone the repository from GitHub.
+Set up the required environment variables.
+Install dependencies using npm or yarn.
+Start the server and launch the app in your preferred web browser.
