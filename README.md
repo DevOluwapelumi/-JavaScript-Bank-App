@@ -15,3 +15,9 @@ Filter and search for specific transactions by date, amount, or description.
 4. Deposit and Withdraw
 Easily deposit funds into your accounts and specify the source of the deposit.
 Withdraw funds with customizable withdrawal limits and recipient details.
+5. Transfer Funds
+Transfer money between your accounts or to other users within the same bank.
+Schedule recurring transfers for automated financial management.
+6. User Authentication
+Secure user authentication and authorization to protect sensitive financial data.
+User registration and password reset functionality for new and existing users.
