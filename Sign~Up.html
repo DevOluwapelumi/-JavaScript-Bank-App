@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign~Up</title>
+    <link rel="stylesheet" href="bootstrap-5.2.2-dist/bootstrap-5.2.2-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="./Sign~Up.css">
+</head>
+<body>
+  
+  <div class="video-wrapper">
+    <video playsinline autoplay muted loop poster="">
+      <source src="./EarthV2.mp4" type="video/webm">
+    </video>
+
+     <section class="bg-secondar">
+        <div class="container">
+          <div class="row d-flex justify-content-center align-items-center">
+            <div class="col">
+              <div class="card card-registration my-4">
+                <div class="row g-0">
+                  <div class="col-xl-6 d-none d-xl-block">
+                    <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-registration/img4.webp"
+                      alt="Sample photo" class="img-fluid"
+                      style="border-top-left-radius: .30rem; border-bottom-left-radius: .30rem; height: 800px; width: 800px;">
+                  </div>
+                  <div class="col-xl-6 bg-primary">
+                    <div class="card-body p-md-5 text-black">
+                      <h3 class="mb-5 text-uppercase">Sign~Up Form...</h3>
+      
+                      <div class="row">
+                        <div class="col-md-6 mb-4">
+                          <div class="form-outline">
+                            <input type="text" id="fn" class="form-control form-control-lg">
+                            <label class="form-label" for="form3Example1m">First name</label>
+                          </div>
+                        </div>
+                        <div class="col-md-6 mb-4">
+                          <div class="form-outline">
+                            <input type="text" id="ln" class="form-control form-control-lg">
+                            <label class="form-label" for="form3Example1n">Last name</label>
+                          </div>
+                        </div>
+                        <div class="col-md-6 mb-4">
+                            <div class="form-outline">
+                              <input type="text" id="sn" class="form-control form-control-lg">
+                              <label class="form-label" for="form3Example1n">Surname</label>
+                            </div>
+                          </div>
+                          <div class="col-md-6 mb-4">
+                            <div class="form-outline">
+                              <input type="text" id="us" placeholder="e.g @Oluwapelumi" class="form-control form-control-lg">
+                              <label class="form-label" for="form3Example1n">Username</label>
+                            </div>
+                          </div>
+                      </div>
+
+                      <div class="form-outline mb-4">
+                        <input type="text" id="em" class="form-control form-control-lg">
+                        <label class="form-label" for="form3Example97">Email ID</label>
+                      </div>
+                      <div class="row">
+                        <div class="col-md-6 mb-4">
+                      <div class="form-outline mb-4">
+                        <input type="text" id="ps" class="form-control form-control-lg" />
+                        <label class="form-label" for="form3Example97">Password</label>
+                      </div>
+                    </div>
+                      <div class="col-md-6 mb-4">
+                      <div class="form-outline mb-4">
+                        <input type="text" id="cps" class="form-control form-control-lg" />
+                        <label class="form-label" for="form3Example97">Confirm Password</label>
+                      </div>
+                    </div>
+                    </div>
+
+                    <div class="d-flex justify-content-end pt-3">
+                        <button type="button" class="btn btn-light btn-lg">Reset all</button>
+                        <button type="button" class="btn btn-warning btn-lg ms-2" onclick="SignOut()">Sign~In</button>
+                      </div>
+      
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+  </div>
+
+
+  <script>
+
+    var userOutput = []
+    if(localStorage.userOut){
+            var outcomeDatas = JSON.parse(localStorage.getItem('userOut'))
+            userOutput = outcomeDatas
+           }
+           console.log(userOutput)
+           
+      var everyDetails = JSON.parse(localStorage.getItem('userIn'))
+        console.log(everyDetails)
+
+        const SignOut = ()=>{
+          if(us.value == "" || ps.value == "" || cps.value == ""){
+                error.innerHTML = `<h1 class="ms-5">Please, Fill in the Blank Details Correctly!!!</h1>`
+                error.style.color = 'red'
+          }else{
+            var eachInfo = {
+              name: userUs.value,
+              password: userPs.value,
+              confirm: userCps.value,
+            }
+            userOutput.push(eachInfo) 
+                localStorage.setItem('userOut', JSON.stringify(userOutput))
+                console.log(userOutput)
+                setTimeout(() => {
+                window.location.href = "Sign~In.html"
+            }, 1000);
+          }
+            var userFirst = fn.value;
+            var userLast = ln.value;
+            var userSur = sm.value;
+            var userEmail = em.value;
+            var found = false
+
+            for (let index = 0; index < everyDetails.length; index++) {
+                if(everyDetails[index].firstname == userFirst && everyDetails[index].lastname == userLast && everyDetails[index].othername == userSur && everyDetails[index].email == userEmail){
+                    alert(index)
+                    found = true
+                    localStorage.setItem('curUser', index)
+                    break;
+            }
+        }
+        // if(found == true){
+        //     window.location.href = "Sign~In.html"
+        // }else{
+        //     error.innerHTML =`<h5 class="text-danger"> Incorrect Details </h5>`
+        // }
+    }
+
+        // function back(){
+        //     var getconfirm = confirm("Do you wanna go back?")
+        //     if(getconfirm == true){
+        //         window.location.href = "signup.html"
+        //     }else{
+        //         alert("You dey Play!!!")
+        //     }
+        // }
+
+
+
+    // const SignIn = ()=>{
+    //         setTimeout(() => {
+    //             window.location.href = "Sign~In.html"
+    //         }, 1000);
+    //       }
+  </script>
+
+    
+</body>
+</html>

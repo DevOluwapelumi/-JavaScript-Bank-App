@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+    <link rel="stylesheet" href="bootstrap-5.2.2-dist/bootstrap-5.2.2-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="./Registration.css">
+</head>
+<body>
+    <section class="h-100 h-custom gradient-custom-2" id="general">
+        <div class="container py-5 h-100">
+          <div class="row d-flex justify-content-center align-items-center h-100">
+            <div class="col-12">
+              <div class="card card-registration card-registration-2" style="border-radius: 15px;">
+                <div class="card-body p-0">
+                  <div class="row g-0">
+                    <div class="col-lg-12">
+                      <div class=" bg-indigol text-white">
+                      <div class="p-5">
+                        <h3 class="fw-normal mb-5 General"><b>General Infomation</b></h3>
+      
+                        <!-- <div class="mb-4 pb-2">
+                          <select class="select">
+                            <option value="1">Title</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                            <option value="4">Four</option>
+                          </select>
+                        </div>
+       -->
+                        <div class="row">
+                          <div class="col-md-4 mb-4 pb-2">
+                            <div class="form-outline">
+                              <label class="form-label" for="form3Examplev2">First name</label>
+                              <input type="text" id="userName" oninput="test()" class="form-control form-control-lg" />
+                            </div>
+                          </div>
+
+                          <div class="col-md-4 mb-4 pb-2">
+                            <label class="form-label" for="form3Examplev3">Last name</label>
+                            <div class="form-outline">
+                              <input type="text" id="userLname" oninput="test()" class="form-control form-control-lg" />
+                            </div>  
+                          </div>
+
+                          <div class="col-md-4 mb-4 pb-2">
+                            <div class="form-outline">
+                              <label class="form-label" for="form3Examplev3">Other name</label>
+                              <input type="text" id="userOname" oninput="test()" class="form-control form-control-lg" />
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="d-md-flex justify-content-start align-items-center mb-5">
+                            <h6 class="mb-0 me-4" id="userGender">Gender: </h6>
+                            <div class="form-check form-check-inline mb-0 me-4">
+                              <input class="form-check-input" type="radio" name="inlineRadioOptions" id="userFemale"
+                                value="option1">
+                              <label class="form-check-label" for="femaleGender">Female</label>
+                            </div>
+          
+                            <div class="form-check form-check-inline mb-0 me-4">
+                              <input class="form-check-input" type="radio" name="inlineRadioOptions" id="userMale"
+                                value="option2">
+                              <label class="form-check-label" for="maleGender">Male</label>
+                            </div>
+          
+                            <div class="form-check form-check-inline mb-0">
+                              <input class="form-check-input" type="radio" name="inlineRadioOptions" id="userOther"
+                                value="option3">
+                              <label class="form-check-label" for="otherGender">Other</label>
+                            </div>
+                          </div>
+
+                          <div class="d-md-flex justify-content-start align-items-center mb-5">
+                            <h6 class="mb-0 me-4" id="userStatus">Marital Status: </h6>
+                            <div class="form-check form-check-inline mb-0 me-4">
+                              <input class="form-check-input" type="checkbox" name="inlineRadioOptions" id="userSingle"
+                                value="opt1">
+                              <label class="form-check-label" for="single">Single</label>
+                            </div>
+                            <div class="form-check form-check-inline mb-0 me-4">
+                              <input class="form-check-input" type="checkbox" name="inlineRadioOptions" id="userMarried"
+                                value="opt2">
+                              <label class="form-check-label" for="married">Married</label>
+                            </div>
+                            <div class="form-check form-check-inline mb-0">
+                              <input class="form-check-input" type="checkbox" name="inlineRadioOptions" id="userOthers"
+                                value="opt3">
+                              <label class="form-check-label" for="other">Other</label>
+                            </div>
+                          </div>
+                          
+                          <div class="row">
+                          <div class="col-md-6 mb-5 mt-5">
+                            <div class="form-outline">
+                              <label class="form-label" for="form3Examplev3">Date Of Birth (D.O.B)</label>
+                              <input type="date" id="userDate" class="form-control form-control-lg">
+                            </div>
+                          </div>
+                          <div class="col-md-6 mb-5 mt-5">
+                            <div class="form-outline">
+                              <label class="form-label" for="form3Examplev3">Pin~Code</label>
+                              <input type="text" id="userPin" oninput="test()" class="form-control form-control-lg">
+                            </div>
+                          </div>
+                        </div>
+
+                          <div class="row">
+                            <div class="col-md-6 mb-4">
+                              <div class="form-outline">
+                                <label class="form-label" for="form3Example1m1">Mother's name</label>
+                                <input type="text" id="userMot" oninput="test()" class="form-control form-control-lg">
+                              </div>
+                            </div>
+                            <div class="col-md-6 mb-4">
+                              <div class="form-outline">
+                                <label class="form-label" for="form3Example1n1">Father's name</label>
+                                <input type="text" id="userFat" oninput="test()" class="form-control form-control-lg">
+                              </div>
+                            </div>
+                          </div>
+
+                          <div class="row">
+                            <div class="col-md-6 mb-4">
+                              <div class="form-outline">
+                                <label class="form-label" for="form3Example1m1">Next of Kin</label>
+                                <input type="text" id="userKin" oninput="test()" class="form-control form-control-lg" />
+                              </div>
+                            </div>
+                            <div class="col-md-6 mb-4">
+                              <div class="form-outline">
+                                <label class="form-label" for="form3Example1n1">Relatives</label>
+                                <input type="text" id="userRel" oninput="test()" class="form-control form-control-lg" />
+                              </div>
+                            </div>
+                          </div>
+
+                          <div id="error"></div>
+                        <button type="button" onclick="nest()" class="btn btn-success btn-lg"
+                        data-mdb-ripple-color="dark">Next click</button>      
+                      </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+                    <!-- <section class="h-100 h-custom gradient-custom-1" style="display: none;"id="details"> -->
+                      <div class="container py-5 h-100" style="display: none;" id="details">
+                        <div class="row d-flex justify-content-center align-items-center h-100">
+                          <div class="col-12">
+                            <div class="card card-registration card-registration-2" style="border-radius: 15px;">
+                              <div class="card-body p-0">
+                                <div class="row g-0">
+                                  <div class="col-lg-12">
+                                    <div class=" bg-indigol text-white">
+                                    <div class="p-3">
+                    <div class=" bg-indigo text-white">
+                      <div class="p-5">
+                        <h3 class="fw-normal mb-5" id="next">Contact Details</h3>
+      
+                        <div class="mb-4 pb-2">
+                          <div class="form-outline form-white">
+                            <label class="form-label" for="form3Examplea2">Address/Street name</label>
+                            <input type="text" id="userAddress" class="form-control form-control-lg" />
+                          </div>
+                        </div>
+      
+                        <div class="mb-4 pb-2">
+                          <div class="form-outline form-white">
+                            <label class="form-label" for="form3Examplea3">L.G.A</label>
+                            <input type="text" id="userLga" onblur="test()" class="form-control form-control-lg" />
+                          </div>
+                        </div>
+      
+                        <div class="row">
+                          <div class="col-md-7 mb-4 pb-2">
+                            <label class="form-label" for="form3Examplea4">State of Origin</label>
+                            <select class="select form-control form-control-lg"  id="userState">
+                                <option value="1">--- Select your state of Origin ---</option>
+                                <option value="2">Abia</option>
+                                <option value="3">Adamawa</option>
+                                <option value="4">Akwa~Ibom</option>
+                                <option value="5">Anambra</option>
+                                <option value="6">Bauchi</option>
+                                <option value="7">Bayelsa</option>
+                                <option value="8">Benue</option>
+                                <option value="9">Borno</option>
+                                <option value="10">Cross~River</option>
+                                <option value="11">Delta</option>
+                                <option value="12">Ebonyi</option>
+                                <option value="13">Edo</option>
+                                <option value="14">Ekiti</option>
+                                <option value="15">Enugu</option>
+                                <option value="16">Gombe</option>
+                                <option value="17">Imo</option>
+                                <option value="18">Jigawa</option>
+                                <option value="19">Kaduna</option>
+                                <option value="20">Kano</option>
+                                <option value="21">Kastina</option>
+                                <option value="22">Kebbi</option>
+                                <option value="23">Kogi</option>
+                                <option value="24">Kwara</option>
+                                <option value="25">Lagos</option>
+                                <option value="26">Nasarawa</option>
+                                <option value="27">Niger</option>
+                                <option value="28">Ogun</option>
+                                <option value="29">Ondo</option>
+                                <option value="30">Osun</option>
+                                <option value="31">Oyo</option>
+                                <option value="32">Plateau</option>
+                                <option value="33">Rivers</option>
+                                <option value="34">Sokoto</option>
+                                <option value="35">Taraba</option>
+                                <option value="36">Yobe</option>
+                                <option value="36">Zamfara</option>
+                                <option value="36">F.C.T</option>
+                              </select>
+                          </div>
+
+                          <div class="col-md-5 mb-4 pb-2">
+      
+                            <div class="form-outline form-white">
+                              <label class="form-label" for="form3Examplea4">Zip Code</label>
+                              <input type="text" id="userCode" oninput="test()" placeholder="Enter your state code..." class="form-control form-control-lg"/>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="row">
+                        <div class=" col-md-4 mb-4 pb-2">
+                          <div class="form-outline form-white">
+                            <label class="form-label" for="form3Examplea6">Country</label>
+                            <input type="text" id="userCountry" class="form-control form-control-lg" />
+                          </div>
+                        </div>
+      
+                        <div class="col-md-3 mb-4 pb-2">
+                          <div class="form-outline form-white">
+                              <label class="form-label" for="form3Examplea7">Code +</label>
+                                <select class="select form-control form-control-lg"  id="userNumCode">
+                                        <option value="1">Code---</option>
+                                        <option value="7">Algeria +213</option>
+                                        <option value="8">Angola +244</option>
+                                        <option value="9">Argentina +54</option>
+                                        <option value="9">Australia +61</option>
+                                        <option value="9">Belgium +32</option>
+                                        <option value="9">Brazil +55</option>
+                                        <option value="9">Canada +1</option>
+                                        <option value="9">Chad +235</option>
+                                        <option value="9">Croatia +385</option>
+                                        <option value="9">Cuba +53</option>
+                                        <option value="2">Nigeria +234</option>
+                                        <option value="3">USA +1</option>
+                                        <option value="4">UK +44</option>
+                                        <option value="5">India +91</option>
+                                        <option value="6">China +86</option>
+                                       
+                                </select>
+                            </div>
+                          </div>
+
+                          <div class="col-md-5 mb-4 pb-2">
+                            <div class="form-outline form-white">
+                              <label class="form-label" for="form3Examplea8">Phone Number</label>
+                              <input type="text" id="userNumber" placeholder="e.g 7047142093" onblur="test()" class="form-control form-control-lg">
+                              <div id="disp"></div>
+                            </div>
+      
+                          </div>
+                        </div>
+                        <div class="row">
+                        <div class="col-md-6 mb-4 pb-2">
+                          <div class="form-outline form-white">
+                            <label class="form-label" for="form3Examplea9">Your Email</label>
+                            <input type="text" id="userEmail" onblur="test()" class="form-control form-control-lg"/>
+                            <div id="disp"></div>
+                          </div>
+                        </div>
+      
+                        <div class="col-md-6 mb-4 pb-2">
+                            <div class="form-outline form-white">
+                              <label class="form-label" for="form3Examplea9">NIN/BVN</label>
+                              <input type="text" id="userInp" placeholder="e.g 12211221121" onblur="test()" class="form-control form-control-lg">
+                              <div id="disp"></div>
+                            </div>
+                          </div>
+                             </div>
+
+                        <div class="form-check d-flex justify-content-start mb-4 pb-3">
+                          <input class="form-check-input me-3" type="checkbox" value="" id="form2Example3c" />
+                          <label class="form-check-label text-white" for="form2Example3">
+                            I do accept the <a href="#!" class="text-white"><u>Terms and Conditions</u></a> of your
+                            site.
+                          </label>
+                        </div>
+                        
+                        <button type="button" class="btn btn-success btn-lg"
+                        data-mdb-ripple-color="dark" onclick="back()">Back</button>  
+                        <button type="button" class="btn btn-success btn-lg"
+                          data-mdb-ripple-color="dark" onclick="SignIn()">Sign~Up</button>
+                      </div>
+                    </div>
+                  </div>
+                  </div>
+                  </div>
+                  </div>
+                  </div>
+                  </div> 
+                  </div>
+                  </div>
+                </div>
+                  </section>
+             
+
+
+
+      <script>
+        var userInput= []
+         if(localStorage.userIn){
+            var incomeDatas = JSON.parse(localStorage.getItem('userIn'))
+            userInput = incomeDatas
+           }
+           console.log(userInput)
+
+        const nest = ()=> {
+          if(userName.value == "" || userLname.value == "" || userOname.value == ""|| userDate == "" || userPin.value == "" || userMot == "" || userFat == "" || userKin == "" || userRel == "" || userGender.value == "" || userStatus.value == ""){
+                error.innerHTML = `<h1 class="ms-5">Please, Fill in the Blank Details Correctly!!!</h1>`
+                error.style.color = 'red'
+            }else{
+                var eachDetails = {
+                    firstname: userName.value,
+                    lastname: userLname.value,
+                    othername: userOname.value,
+                    date: userDate.value,
+                    pin: userPin.value,
+                    mother: userMot.value,
+                    father: userFat.value,
+                    kin: userKin.value,
+                    relatives: userRel.value,
+                    gender: userGender.value,
+                    status: userStatus.value,
+                }
+
+                userInput.push(eachDetails) 
+                localStorage.setItem('userIn', JSON.stringify(userInput))
+                console.log(userInput)
+          document.getElementById("general").style="display:none"
+          document.getElementById("details").style="display:inline-block"
+        }
+        }
+
+        const SignIn = ()=>{
+          if(userAddress.value == "" || userLga.value == "" || userState.value == "" || userCode.value == "" || userCountry.value == "" || userNumCode.value == "" || userNumber.value == "" || userEmail.value == "" || userInp.value == ""){
+                error.innerHTML = `<h1 class="ms-5">Please, Fill in the Blank Details Correctly!!!</h1>`
+                error.style.color = 'red'
+              }else{
+                var eachDetail = {
+                address: userAddress.value,
+                    lga: userLga.value,
+                    state: userState.value,
+                    code: userCode.value,
+                    country: userCountry.value,
+                    Numcode: userNumCode.value,
+                    Number: userNumber.value,
+                    email: userEmail.value,
+                    inp: userInp.value,
+              }
+              userInput.push(eachDetail) 
+                localStorage.setItem('userIn', JSON.stringify(userInput))
+                console.log(userInput)
+            setTimeout(() => {
+                window.location.href = "Sign~Up.html"
+            }, 1000);
+           }
+          }
+
+
+        function test(){
+            let regexForName = /^[a-zA-Z]{3,}$/
+    if(!regexForName.test(userName.value)){
+        disp.innerHTML = "Kindly enter a phone number"
+        disp.className = "text-danger"
+        userName.className = "form-control form-control-lg is-invalid"
+    }else{
+        userName.className = "form-control form-control-lg is-valid"
+        disp.innerHTML = "Success"
+        disp.className = "text-sucess"
+    }
+
+    let regexForLname = /^[a-zA-Z]{3,}$/
+    if(!regexForLname.test(userLname.value)){
+        disp.innerHTML = "Kindly enter a phone number"
+        disp.className = "text-danger"
+        userLname.className = "form-control form-control-lg is-invalid"
+    }else{
+        userLname.className = "form-control form-control-lg is-valid"
+        disp.innerHTML = "Success"
+        disp.className = "text-sucess"
+    }
+
+    let regexForOname = /^[a-zA-Z]{3,}$/
+    if(!regexForOname.test(userOname.value)){
+        disp.innerHTML = "Kindly enter a phone number"
+        disp.className = "text-danger"
+        userOname.className = "form-control form-control-lg is-invalid"
+    }else{
+        userOname.className = "form-control form-control-lg is-valid"
+        disp.innerHTML = "Success"
+        disp.className = "text-sucess"
+    }
+    let regexForMother = /^[a-zA-Z]{3,}$/
+    if(!regexForMother.test(userMot.value)){
+        disp.innerHTML = "Kindly enter a phone number"
+        disp.className = "text-danger"
+        userMot.className = "form-control form-control-lg is-invalid"
+    }else{
+        userMot.className = "form-control form-control-lg is-valid"
+        disp.innerHTML = "Success"
+        disp.className = "text-sucess"
+    }
+    let regexForFather = /^[a-zA-Z]{3,}$/
+    if(!regexForFather.test(userFat.value)){
+        disp.innerHTML = "Kindly enter a phone number"
+        disp.className = "text-danger"
+        userFat.className = "form-control form-control-lg is-invalid"
+    }else{
+        userFat.className = "form-control form-control-lg is-valid"
+        disp.innerHTML = "Success"
+        disp.className = "text-sucess"
+    }
+    let regexForKin = /^[a-zA-Z]{3,}$/
+    if(!regexForKin.test(userKin.value)){
+        disp.innerHTML = "Kindly enter a phone number"
+        disp.className = "text-danger"
+        userKin.className = "form-control form-control-lg is-invalid"
+    }else{
+        userKin.className = "form-control form-control-lg is-valid"
+        disp.innerHTML = "Success"
+        disp.className = "text-sucess"
+    }
+    let regexForRelatives = /^[a-zA-Z]{3,}$/
+    if(!regexForRelatives.test(userRel.value)){
+        disp.innerHTML = "Kindly enter a phone number"
+        disp.className = "text-danger"
+        userRel.className = "form-control form-control-lg is-invalid"
+    }else{
+        userRel.className = "form-control form-control-lg is-valid"
+        disp.innerHTML = "Success"
+        disp.className = "text-sucess"
+    }
+
+    let regexForCode = /^[\d]{6,7}$/
+    if(!regexForCode.test(userCode.value)){
+        disp.innerHTML = "Kindly enter a phone number"
+        disp.className = "text-danger"
+        userCode.className = "form-control form-control-lg is-invalid"
+    }else{
+        userCode.className = "form-control form-control-lg is-valid"
+        disp.innerHTML = "Success"
+        disp.className = "text-sucess"
+    }
+    let regexForPin = /^[\d]{4}$/
+    if(!regexForPin.test(userPin.value)){
+        disp.innerHTML = "Kindly enter a phone nxumber"
+        disp.className = "text-danger"
+        userPin.className = "form-control form-control-lg is-invalid"
+    }else{
+        userPin.className = "form-control form-control-lg is-valid"
+        disp.innerHTML = "Success"
+        disp.className = "text-sucess"
+    }
+
+            let regexForPhone = /^[\d]{10}$/
+    if(!regexForPhone.test(userNumber.value)){
+        disp.innerHTML = "Kindly enter a phone number"
+        disp.className = "text-danger"
+        userNumber.className = "form-control form-control-lg is-invalid"
+    }else{
+        userNumber.className = "form-control form-control-lg is-valid"
+        disp.innerHTML = "Success"
+        disp.className = "text-sucess"
+    }
+
+    let regexForNin = /^[\d]{11}$/
+    if(!regexForNin.test(userInp.value)){
+        disp.innerHTML = "Kindly enter a phone number"
+        disp.className = "text-danger"
+        userInp.className = "form-control form-control-lg  is-invalid"
+    }else{
+        userInp.className = "form-control form-control-lg is-valid"
+        disp.innerHTML = "Success"
+        disp.className = "text-sucess"
+    }
+
+        let regexForEmail = /[\w]{7,}@[\w]{4,}.com/
+    if(!regexForEmail.test(userEmail.value)){
+        disp.innerHTML = "Kindly enter a valid Email"
+        disp.className = "text-danger"
+        userEmail.className = "form-control form-control-lg is-invalid"
+    }else{
+        userEmail.className = "form-control form-control-lg is-valid"
+        disp.innerHTML = "Success"
+        disp.className = "text-sucess"
+    }
+}
+
+
+        const back = ()=>{
+                    setTimeout(() => {
+                        window.location.href = "Registration.html"
+                    }, 1000);
+                  }
+      
+      </script>
+</body>
+</html>

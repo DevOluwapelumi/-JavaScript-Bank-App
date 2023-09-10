@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign~In</title>
+    <link rel="stylesheet" href="./Sign~In.css">
+    <link rel="stylesheet" href="bootstrap-5.2.2-dist/bootstrap-5.2.2-dist/css/bootstrap.css">
+</head>
+<body class="bg-secondary">
+
+    <!-- Button to open the modal login form -->
+<button onclick="document.getElementById('id01').style.display='block'">Login</button>
+
+<!-- The Modal -->
+<div id="id01" class="modal">
+  <span onclick="document.getElementById('id01').style.display='none'"
+class="close" title="Close Modal">&times;</span>
+
+  <!-- Modal Content -->
+  <!-- <form class="modal-content animate" action="/action_page.php"> -->
+    <div class="imgcontainer">
+      <img src="img_avatar2.png" alt="Avatar" class="avatar">
+    </div>
+
+    <div class="container">
+      <label for="uname" ><b>Username</b></label>
+      <input type="text" id="InEm" placeholder="Enter Username" name="uname" required>
+
+      <label for="psw" ><b>Password</b></label>
+      <input type="password" id="InPs" placeholder="Enter Password" name="psw" required>
+      <div id="error"></div>
+
+      <button type="submit" onclick="login()"><b>Login</b></button>
+      <label>
+        <input type="checkbox" name="remember"> Remember me
+      </label>
+    </div>
+
+    <div class="container" style="background-color:#db8888">
+      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn btn-warning">Cancel</button>
+      <span class="psw">Forgot <a href="#">password?</a></span>
+    </div>
+  <!-- </form> -->
+</div>
+
+      <script>
+
+var everyInform = JSON.parse(localStorage.getItem('userIn'))
+        console.log(everyInform)
+
+        function login(){
+            var userName= InEm.value;
+            var userPass = InPs.value;
+            var found = false
+
+            for (let index = 0; index < everyInform.length; index++) {
+                if(everyInform[index].name == userName && everyInform[index].password == userPass){
+                    alert(index)
+                    found = true
+                    localStorage.setItem('curUser', index)
+                    break;
+            }
+        }
+        if(found == true){
+            window.location.href = "Dashboard.html"
+        }else{
+            error.innerHTML =`<h5 class="text-danger"> Incorrect Details </h5>`
+        }
+    }
+        
+        // const login = ()=>{
+        //   if(user.value == "" || pass.value == ""){
+        //         error.innerHTML = `<h5 class="ms-5">Please, fill in your Details correctly!!!</h5>`
+        //         error.style.color = 'red'
+        //     }else{
+        //         var eachDetails = {
+        //             username: user.value,
+        //             password: ln.value,
+        //         }
+
+        //         userDe.push(eachDetails)
+        //         localStorage.setItem('userIn', JSON.stringify(userDe))
+        //         console.log(userDe)
+        //         window.location.href = "Dashboard.html"
+        //     }
+        //    }
+
+            // setTimeout(() => {
+            //     window.location.href = "Dashboard.html"
+            // }, 1000);
+           
+      </script>
+
+
+
+    
+</body>
+</html>

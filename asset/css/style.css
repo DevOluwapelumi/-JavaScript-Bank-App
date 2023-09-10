@@ -1,0 +1,103 @@
+@import url('/assets/css/gotham.css');
+
+body.fixed-left{
+    font-family:"GothamPro","Open Sans",Helvetica,Arial,sans-serif,Arial !important;   
+  }
+
+.fixed-left{
+    font-family:"GothamPro","Open Sans",Helvetica,Arial,sans-serif,Arial !important; 
+    background:url(../images/Landing-Page-Open-an-account.png) no-repeat center center;
+   background-size: cover !important;
+   background-position: center center !important;
+   width: 100%;
+   height: auto !important;
+  } 
+
+h2.title{
+	font-weight: 1000;
+	color: #5d1587;
+	font-family: GothamPro;
+}
+
+.body-container p{	
+	color: #5d1587;
+}
+
+.body-container .bg-image{
+	background:url(../images/Asset-7.png) no-repeat center center;
+	height: auto !important;
+	min-height: 600px !important;
+	margin-left: 0px !important;
+   background-position: center center !important;
+}
+.body-container .pa-acct{
+	padding: .3em 1em;
+	cursor: pointer;
+	text-align: left;
+	border: 3px solid #fff;
+	border-radius: 15px;
+	background: rgba(93,20,138,1);
+	color: #fff;
+}
+.body-container .ba-acct{
+	padding: .3em 1em;
+	cursor: pointer;
+	text-align: left;
+	border: 3px solid #fff;
+	border-radius: 15px;
+	color: #5d1587;
+	background: rgba(255,185,34,1);
+background: -moz-linear-gradient(45deg, rgba(255,185,34,1) 0%, rgba(255,143,7,1) 100%);
+background: -webkit-gradient(left bottom, right top, color-stop(0%, rgba(255,185,34,1)), color-stop(100%, rgba(255,143,7,1)));
+background: -webkit-linear-gradient(45deg, rgba(255,185,34,1) 0%, rgba(255,143,7,1) 100%);
+background: -o-linear-gradient(45deg, rgba(255,185,34,1) 0%, rgba(255,143,7,1) 100%);
+background: -ms-linear-gradient(45deg, rgba(255,185,34,1) 0%, rgba(255,143,7,1) 100%);
+background: linear-gradient(45deg, rgba(255,185,34,1) 0%, rgba(255,143,7,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffb922', endColorstr='#ff8f07', GradientType=1 );
+}
+button i.fa-caret-right{
+	color: #ffb822;
+	float: right;
+	font-size: 1.5em;
+}
+button.ba-acct i.fa-caret-right{
+	color: #5d1587;
+	float: right;
+	font-size: 1.5em;
+}
+
+@media (max-width:640px){
+	.body-container .bg-image {
+		margin-top: 1em !important;
+	}
+}
+
+@media  (min-width: 992px) {
+	h2.title {
+		font-size: 3.5em;
+	}
+	.body-container .pa-acct {
+		font-size: 1.4em;
+	}
+	.body-container .ba-acct {
+		font-size: 1.4em;
+	}
+	.body-container p {
+		font-size: 1.2em;
+	}
+	.body-container .bg-image {
+		background: url(../images/Asset-7.png) no-repeat center center;
+		width: 100%;
+		height: auto;
+		min-height: 517px;
+		background-size: cover !important;
+		background-position: center center !important;
+		margin-left: -62px;
+	}
+  }
+
+  @media  (min-width: 1200px) {
+	.body-container .bg-image {
+		margin-left: -13%;
+	}
+  }

@@ -1,0 +1,48 @@
+.video-wrapper {
+    /* Telling our absolute positioned video to 
+    be relative to this element */
+    position: relative;
+    width: 1600px;
+    height: 827px;
+  
+    /* Will not allow the video to overflow the 
+    container */
+    overflow: hidden;
+  
+    /* Centering the container's content vertically 
+    and horizontally */
+    display: flex;
+    justify-content: center;
+  }
+  video {
+    /** Simulationg background-size: cover */
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+  
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+@media (max-width: 500px) {
+    .video-wrapper {
+        position: relative;
+        width: 400px;
+        height: 827px;
+        /* overflow: hidden; */
+        /* display: flex; */
+        /* justify-content: center; */
+      }
+      video {
+        /* object-fit: cover; */
+        /* display: none; */
+        height: 100%;
+        width: 100%;
+        /* position: absolute; */
+        /* top: 10px; */
+        /* left: 0; */
+      }
+    
+
+}
