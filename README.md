@@ -21,3 +21,8 @@ Schedule recurring transfers for automated financial management.
 6. User Authentication
 Secure user authentication and authorization to protect sensitive financial data.
 User registration and password reset functionality for new and existing users.
+7. Notifications
+Receive real-time notifications for account activity, such as deposits, withdrawals, and transfers.
+8. Currency Conversion
+Automatically convert currency for international transactions.
+Access up-to-date exchange rates for accurate conversions.
