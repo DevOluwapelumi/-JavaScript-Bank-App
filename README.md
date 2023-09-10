@@ -9,3 +9,9 @@ Interactive dashboard providing a snapshot of account balances and recent transa
 2. Account Management
 Create and manage multiple bank accounts, including savings and checking accounts.
 View account details, including current balance and account type.
+3. Transaction History
+Keep track of all your financial activities with a comprehensive transaction history.
+Filter and search for specific transactions by date, amount, or description.
+4. Deposit and Withdraw
+Easily deposit funds into your accounts and specify the source of the deposit.
+Withdraw funds with customizable withdrawal limits and recipient details.
