@@ -26,3 +26,14 @@ Receive real-time notifications for account activity, such as deposits, withdraw
 8. Currency Conversion
 Automatically convert currency for international transactions.
 Access up-to-date exchange rates for accurate conversions.
+
+Technologies Used
+The JavaScript Bank App is built using a modern tech stack, making it robust, scalable, and maintainable:
+
+Frontend: HTML, CSS, JavaScript, and a responsive design framework (e.g., Bootstrap).
+Backend: Node.js with Express.js for server-side logic.
+Database: MongoDB for storing user account and transaction data.
+Authentication: Passport.js for user authentication.
+Real-time Updates: WebSocket or a similar technology for real-time notifications.
+API Integration: For currency conversion and other external services.
+Version Control: Git for collaborative development and GitHub for project hosting.
