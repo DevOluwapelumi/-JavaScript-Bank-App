@@ -32,7 +32,7 @@ The JavaScript Bank App is built using a modern tech stack, making it robust, sc
 
 Frontend: HTML, CSS, JavaScript, and a responsive design framework (e.g., Bootstrap).
 Backend: Node.js with Express.js for server-side logic.
-Database: MongoDB for storing user account and transaction data.
+Database: MongoDB for storing user accounts and transaction data.
 Authentication: Passport.js for user authentication.
 Real-time Updates: WebSocket or a similar technology for real-time notifications.
 API Integration: For currency conversion and other external services.
